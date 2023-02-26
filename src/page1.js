@@ -1,3 +1,8 @@
+    import { createContactSections as contact} from "./contact";
+    import { food } from "./menu";
+    
+    
+    
     export const header = () => {
     const page = document.querySelector("#content");
     const header = document.createElement("header");
@@ -13,13 +18,24 @@
 
     h1.textContent = "welcome to my restruant";
 
-    a1.href = "#";
+    a1.href = "index.html";
     a1.textContent = "Home";
 
-    a2.href = "$";
+    a2.href ="#";
+    a2.addEventListener('click', function(event) {
+        event.preventDefault();
+        food();
+        console.log("workin?")
+      });
+    
     a2.textContent = "Menu";
 
     a3.href = "#";
+    a3.addEventListener('click', function(event) {
+        event.preventDefault();
+        contact();
+        console.log("workin?")
+      });
     a3.textContent = "Contact Us";
 
     li1.appendChild(a1);

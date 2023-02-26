@@ -1,16 +1,23 @@
 /* Global styles */
-body {
+  body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
   }
   
+  #content {
+    margin: 0;
+    padding: 0;
+  }
+
+
   /* Header styles */
   header {
     background-color: #FFA500;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     padding: 20px;
   }
   
@@ -32,8 +39,13 @@ body {
   
   /* Main content styles */
   main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 20px;
   }
+
   
   h1, h2 {
     color: #FFA500;
